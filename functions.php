@@ -405,7 +405,36 @@ function pirate_rogue_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 
-	
+	register_sidebar( array (
+		'name'          => esc_html__( 'Main Page Left Widget Area', 'pirate-rogue'),
+		'id'            => 'sidebar-main-left',
+		'description'   => esc_html__( 'Widget area on the main page.', 'pirate-rogue'),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => "</section>",
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array (
+		'name'          => esc_html__( 'Main Page Middle Widget Area', 'pirate-rogue'),
+		'id'            => 'sidebar-main-middle',
+		'description'   => esc_html__( 'Widget area on the main page.', 'pirate-rogue'),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => "</section>",
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array (
+		'name'          => esc_html__( 'Main Page Right Widget Area', 'pirate-rogue'),
+		'id'            => 'sidebar-main-right',
+		'description'   => esc_html__( 'Widget area on the main page.', 'pirate-rogue'),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => "</section>",
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
 }
 add_action( 'widgets_init', 'pirate_rogue_widgets_init' );
 

@@ -6019,6 +6019,22 @@ article header {
       font-style: normal;
       font-weight: 600; }
 
+.widget-main-left {
+  float: left;
+  margin-right: 19.5333px;
+  width: 390.85px; }
+
+.widget-main-middle {
+  float: left;
+  margin-left: 9.76667px;
+  margin-right: 9.76667px;
+  width: 390.85px; }
+
+.widget-main-right {
+  float: left;
+  margin-left: 19.5333px;
+  width: 390.85px; }
+
 a.rsswidget {
   font-weight: 600; }
 

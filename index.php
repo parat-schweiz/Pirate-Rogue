@@ -21,6 +21,35 @@ if ( '' != get_theme_mod( 'pirate_rogue_featuredtag' ) || '' != get_theme_mod( '
 </div>
 <?php endif; ?>
 
+<?php if ( is_active_sidebar( 'sidebar-main-left' ) and is_active_sidebar( 'sidebar-main-middle' ) and is_active_sidebar( 'sidebar-main-right' ) ) : ?>
+	<section id="front-section-threecolumn" class="front-section">
+		<div class="widget-area type-post">
+			<?php dynamic_sidebar( 'sidebar-main-left' ); ?>
+		</div><!-- .widget-area -->
+		<div class="widget-area type-post">
+			<?php dynamic_sidebar( 'sidebar-main-middle' ); ?>
+		</div><!-- .widget-area -->
+		<div class="widget-area type-post">
+			<?php dynamic_sidebar( 'sidebar-main-right' ); ?>
+		</div><!-- .widget-area -->
+	</section>
+<?php elseif ( is_active_sidebar( 'sidebar-main-left' ) and is_active_sidebar( 'sidebar-main-right' ) ) : ?>
+	<section id="front-section-twocolumn" class="front-section">
+		<div class="widget-area type-post">
+			<?php dynamic_sidebar( 'sidebar-main-left' ); ?>
+		</div><!-- .widget-area -->
+		<div class="widget-area type-post">
+			<?php dynamic_sidebar( 'sidebar-main-right' ); ?>
+		</div><!-- .widget-area -->
+	</section>
+<?php elseif ( is_active_sidebar( 'sidebar-main-left' ) ) : ?>
+	<section id="front-section-onecolumn" class="front-section">
+		<div class="widget-area type-post">
+			<?php dynamic_sidebar( 'sidebar-main-left' ); ?>
+		</div><!-- .widget-area -->
+	</section>
+<?php endif; ?>
+
 <?php
 // Front Page Section 1 (Featured Top)
 if ( '' != get_theme_mod( 'uku_front_section_one_tag' ) || '' != get_theme_mod( 'uku_front_section_one_cat' ) ) : ?>
