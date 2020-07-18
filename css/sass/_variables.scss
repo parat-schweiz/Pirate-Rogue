@@ -5,15 +5,15 @@ $version:  '1.4.6';
     // First Digit:  Manual
     // Second Digit: Branch Version
     // Third Digit:  (Daily) Submit Version
-    
+
 $stylecomment_themeversion:	$version;
 //////////////////////////////////////////////////////////////////////////////
 // Colors
 //////////////////////////////////////////////////////////////////////////////
-$color-main:			#ff8800;
-$color-second:			#672082;
-$color-third:			#698bc1; //
-$color-four:			#148f93;
+$color-main:      #9e0f7f;
+$color-second:    #666666;
+$color-third:     #999999;
+$color-four:      #148f93;
 
 // Colorsets
 $customizer-colorset: (
@@ -85,10 +85,10 @@ $color-content-h6:              $color-text;
 //////////////////////////////////////////////////////////////////////////////
 // Fonts
 //////////////////////////////////////////////////////////////////////////////
-$font-family-sans-serif:    'DejaWeb', sans-serif;
+$font-family-sans-serif:    'Montserrat', sans-serif;
 $font-family-serif:         Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:     Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", "Courier New", "Courier 10 Pitch", Courier,monospace;
-$font-family-headlines:     'roboto', sans-serif;
+$font-family-headlines:     'MontserratAlternates', sans-serif;
 
 $font-family-base:          $font-family-sans-serif;
 $font-family-sitetitle:     $font-family-headlines;
