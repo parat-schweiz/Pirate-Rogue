@@ -37,7 +37,25 @@ $blogname = get_bloginfo('name');
 		} 
                 ?>
 
-		<div class="footer-wrap">
+		<section id="front-section-threecolumn" class="front-section">
+			<div class="widget-area type-post widget-post">
+				<?php if ( is_active_sidebar( 'sidebar-footer-left' ) ) : ?>
+				<?php dynamic_sidebar( 'sidebar-footer-left' ); ?>
+				<?php endif; ?>
+			</div><!-- .widget-area -->
+			<div class="widget-area type-post widget-post">
+				<?php if ( is_active_sidebar( 'sidebar-footer-middle' ) ) : ?>
+				<?php dynamic_sidebar( 'sidebar-footer-middle' ); ?>
+				<?php endif; ?>
+			</div><!-- .widget-area -->
+			<div class="widget-area type-post widget-post">
+				<?php if ( is_active_sidebar( 'sidebar-footer-right' ) ) : ?>
+				<?php dynamic_sidebar( 'sidebar-footer-right' ); ?>
+				<?php endif; ?>
+			</div><!-- .widget-area -->
+		</section>
+
+		<section class="front-section">
 			<?php // Footer Menus.
 			if ( has_nav_menu( 'footer-one' ) 
                                 || has_nav_menu( 'footer-two' ) 
@@ -83,7 +101,7 @@ $blogname = get_bloginfo('name');
 				</div><!-- end #footer-social -->
 			<?php endif; ?>
 
-		</div><!-- end .footer-wrap -->
+		</section>
 	</footer><!-- end #colophon -->
 </div><!-- end .container-all -->
 
