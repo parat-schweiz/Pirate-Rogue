@@ -6200,11 +6200,13 @@ a.rsswidget {
     padding: 0 0 20px; }
 
 #footer-menu-one,
-#footer-menu-three {
+#footer-menu-three,
+#footer-menu-five {
   clear: left; }
 
 #footer-menu-two,
-#footer-menu-four {
+#footer-menu-four,
+#footer-menu-six {
   clear: right; }
 
 .footer-menu ul {
@@ -6306,7 +6308,9 @@ a.rsswidget {
   #footer-menu-one,
   #footer-menu-two,
   #footer-menu-three,
-  #footer-menu-four {
+  #footer-menu-four,
+  #footer-menu-five,
+  #footer-menu-six {
     clear: none; }
 
   .footer-menu {
@@ -6316,7 +6320,9 @@ a.rsswidget {
 
   #footer-menu-one,
   #footer-menu-two,
-  #footer-menu-three {
+  #footer-menu-three,
+  #footer-menu-four,
+  #footer-menu-five {
     margin-right: 2.38095238095238%;
     /* -- 30px at 1440px ---*/ }
 

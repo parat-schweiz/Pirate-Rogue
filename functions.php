@@ -21,14 +21,16 @@ function pirate_rogue_setup() {
 
 	// This theme uses wp_nav_menu().
 	register_nav_menus( array (
-		'primary'	=> esc_html__( 'Main Menu', 'pirate-rogue'),
-		'social' 	=> esc_html__( 'Social Icons', 'pirate-rogue'),
-		'social-front' 	=> esc_html__( 'Social Icons (in About section)', 'pirate-rogue'),
-                'social-footer' => esc_html__( 'Social Icons (in Footer)', 'pirate-rogue'),
-		'footer-one' 	=> esc_html__( 'Footer 1', 'pirate-rogue'),
-		'footer-two' 	=> esc_html__( 'Footer 2', 'pirate-rogue'),
-		'footer-three' 	=> esc_html__( 'Footer 3', 'pirate-rogue'),
-		'footer-four' 	=> esc_html__( 'Footer 4', 'pirate-rogue'),
+		'primary' => esc_html__( 'Main Menu', 'pirate-rogue'),
+		'social'  => esc_html__( 'Social Icons', 'pirate-rogue'),
+		'social-front' => esc_html__( 'Social Icons (in About section)', 'pirate-rogue'),
+    'social-footer' => esc_html__( 'Social Icons (in Footer)', 'pirate-rogue'),
+		'footer-one'   => esc_html__( 'Footer 1', 'pirate-rogue'),
+		'footer-two'   => esc_html__( 'Footer 2', 'pirate-rogue'),
+		'footer-three' => esc_html__( 'Footer 3', 'pirate-rogue'),
+		'footer-four'	 => esc_html__( 'Footer 4', 'pirate-rogue'),
+		'footer-five'	 => esc_html__( 'Footer 5', 'pirate-rogue'),
+		'footer-six'	 => esc_html__( 'Footer 6', 'pirate-rogue'),
 	) );
 
 	// Switch default core markup to output valid HTML5.

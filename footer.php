@@ -57,10 +57,12 @@ $blogname = get_bloginfo('name');
 
 		<section class="front-section">
 			<?php // Footer Menus.
-			if ( has_nav_menu( 'footer-one' ) 
-                                || has_nav_menu( 'footer-two' ) 
-                                || has_nav_menu( 'footer-three' ) 
-                                || has_nav_menu( 'footer-four' ) ) : ?>
+			if ( has_nav_menu( 'footer-one' )
+        || has_nav_menu( 'footer-two' )
+        || has_nav_menu( 'footer-three' )
+        || has_nav_menu( 'footer-four' )
+        || has_nav_menu( 'footer-five' )
+        || has_nav_menu( 'footer-six' ) ) : ?>
 				<?php get_template_part( 'template-parts/footermenus' ); ?>
 			<?php endif; ?>
                     
